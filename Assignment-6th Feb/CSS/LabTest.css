@@ -1,0 +1,67 @@
+.body {
+    margin-left: 3%;
+}
+
+#maindiv {
+    border: 2px solid black;
+    width: 80%;
+    height: 1100px;
+    padding-left: 2%;
+    padding-right: 10%;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    display: inline-block;
+}
+
+.parentbutton {
+    text-align: center;
+}
+
+.buttonallignmentreset {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 10em;
+    margin: 10%;
+}
+
+.buttonallignmentsubmit {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 10em;
+}
+
+.inlinedisplay {
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 45%;
+    height: 900px;
+    padding: 1%;
+}
+
+.textfields {
+    border: none;
+    border-bottom: 2px dotted black;
+    margin: 2em;
+}
+
+.lineDiv {
+    display: inline-block;
+    position: relative;
+}
+
+#mainsection {
+    border: 2px solid black;
+}
+
+.lab_image {
+    height: 700px;
+    float: right;
+    margin-left: 40%;
+    position: fixed;
+    background-color: white;
+}

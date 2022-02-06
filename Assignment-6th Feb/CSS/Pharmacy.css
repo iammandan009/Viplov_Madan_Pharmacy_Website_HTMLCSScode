@@ -1,0 +1,171 @@
+@keyframes myAnimation {
+    0% {
+        background-image: url("/Applications/HTML_GL_Course/Assignment-6th Feb/images/ani1.jpg")
+    }
+    25% {
+        background-image: url("/Applications/HTML_GL_Course/Assignment-6th Feb/images/ani2.png")
+    }
+    50% {
+        background-image: url("/Applications/HTML_GL_Course/Assignment-6th Feb/images/ani3.jpg")
+    }
+    75% {
+        background-image: url("/Applications/HTML_GL_Course/Assignment-6th Feb/images/ani4.jpg")
+    }
+    100% {
+        background-image: url("/Applications/HTML_GL_Course/Assignment-6th Feb/images/ani5.jpg")
+    }
+}
+
+.slideshowimages {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    background-size: 100% 100%;
+    border: 2px solid steelblue;
+    border-width: medium;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#pagefooter {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footertext {
+    padding-top: 30px;
+}
+
+.header {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 50px;
+    font-weight: bold;
+}
+
+#header-text {
+    margin-left: 15em;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-size: 300%;
+}
+
+#topsection {
+    border: 5px solid black;
+    border-radius: 2px;
+}
+
+.covidcare {
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 350px;
+    border: 2px solid rgb(253, 253, 208);
+    display: inline-block;
+    margin: 1%;
+}
+
+.covidcare img {
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    width: 280px;
+    max-width: 280px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+    color: blue;
+}
+
+.productsection {
+    border: solid black;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu {
+    background-color: lightgray;
+}
+
+.main-menu>li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.main-menu>li>a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.main-menu>li>a:hover {
+    background-color: black;
+}
+
+.item-with-sub-menu {
+    position: relative;
+    text-decoration: none;
+}
+
+
+/* we need to hide this initially */
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    /* from the top of the .item-with-sub-menu element */
+    left: 0px;
+    white-space: nowrap;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+
+/* modify the selector so that it selects the sub-menu only when it is within the ..item-with-sub-menu item that is being hovered upon */
+
+.item-with-sub-menu:hover .sub-menu {
+    display: block;
+}
+
+#covidcaresection {
+    overflow-y: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.covidcare:hover {
+    width: 600px;
+    height: 400px;
+}
+
+.addtocart {
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 100%;
+    color: orange;
+}
+
+article>.covidcare:hover img {
+    width: 100%;
+}

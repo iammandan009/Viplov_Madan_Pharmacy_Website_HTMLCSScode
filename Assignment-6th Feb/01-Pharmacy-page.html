@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pharmacy Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script language="javascript">
+        function addtocart(number) {
+            const buttons = document.getElementsByClassName('addtocart');
+            buttons[number].style.backgroundColor = "rgb(250, 234, 230)";
+            buttons[number].style.borderColor = "rgb(0, 255, 76)";
+
+        }
+
+    </script>
+
+    <link rel="stylesheet" href="/Applications/HTML_GL_Course/Assignment-6th Feb/CSS/Pharmacy.css">
+
+</head>
+
+<body>
+    <section id="topsection">
+        <div class="header">
+            <label id="header-text">Pharmacy</label>
+        </div>
+        <nav>
+            <ul class="main-menu list-unstyled">
+                <li> <a href="/link1">Home</a>
+                </li>
+                <li class="item-with-sub-menu">
+                    <a href="/link2">Our Medicines</a>
+                    <ul class="sub-menu list-unstyled">
+                        <li>
+                            <a href="/link2/item1">Fever</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item2">Muscle Pains</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item3">Cold and Cough</a>
+                        </li>
+
+
+
+                    </ul>
+                </li>
+                <li class="item-with-sub-menu">
+                    <a href="/link3">Health Care</a>
+
+                    <ul class="sub-menu list-unstyled">
+                        <li>
+                            <a href="/link3/item1">Baby Care</a>
+                        </li>
+                        <li>
+                            <a href="/link3/item2">Skin Care</a>
+                        </li>
+                        <li>
+                            <a href="/link4/item3">Home Care</a>
+                        </li>
+                        <li>
+                            <a href="/link4/item4">Personal Care</a>
+                        </li>
+
+                        <li>
+                            <a href="/link4/item5">Pet Care</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="/Applications/HTML_GL_Course/Assignment-6th Feb/Lab_Test_Form.html">Lab Test</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <div class="slideshowimages"></div>
+
+
+
+
+        <footer id="pagefooter">
+            <label id="footertext"> @copyright. Only for demonstration purposes</label>
+
+        </footer>
+
+    </section>
+
+    <br />
+    <br />
+
+    <section id="productsection">
+        <article id="covidcaresection" style=" background-color: rgb(230, 230, 250);">
+            <h2>Covid Care</h2>
+            <div class="covidcare">
+                <h3>Covid Test Kit</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/c1.jpg" alt="Covid Test Kit">
+
+
+                <div class="overlay">
+                    Rs 40 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(0)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Covid Essentials</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/c2.jpg" alt="Covid Essentials">
+
+                <div class="overlay">
+                    Rs 240 <br />
+                    Offer Rs 170/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(1)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Sanitizer Bottle</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/c3.jpg" alt="Sanitizer Bottle">
+
+                <div class="overlay">
+                    Rs 99 <br />
+                    Offer Rs 87/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(2)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Mask</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/c4.jpg" alt="Mask">
+
+                <div class="overlay">
+                    Rs 45 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(3)"> Add to cart</button>
+            </div>
+
+
+        </article>
+
+        <article id="covidcaresection" style=" background-color: rgb(230, 230, 250);">
+            <h2>Covid Care</h2>
+            <div class="covidcare">
+                <h3>Mask</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/d1.jpg" alt="Covid Test Kit">
+
+
+                <div class="overlay">
+                    Rs 45 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(4)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Mask</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/d2.jpg" alt="Covid Essentials">
+
+                <div class="overlay">
+                    Rs 45 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(5)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Mask</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/d3.jpg" alt="Sanitizer Bottle">
+
+                <div class="overlay">
+                    Rs 45 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(6)"> Add to cart</button>
+            </div>
+
+            <div class="covidcare">
+                <h3>Mask</h3>
+                <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/d4.png" alt="Mask">
+
+                <div class="overlay">
+                    Rs 35 <br />
+                    Offer Rs 30/-
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <button class="addtocart" onclick="addtocart(7)"> Add to cart</button>
+            </div>
+
+
+        </article>
+
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+
+
+    <script type='text/javascript'>
+        function countCheckboxes() {
+            var inputElems = document.getElementsByTagName("input");
+            var count = 0;
+            for (var i = 0; i < inputElems.length; i++) {
+                if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
+                    count++;
+                }
+            }
+            if (count < 1) {
+                alert("Check atleast 1 Box for Test Type without Fail");
+                event.preventDefault();
+            }
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="/Applications/HTML_GL_Course/Assignment-6th Feb/CSS/LabTest.css">
+
+
+</head>
+
+<body class="body">
+
+    <div id="maindiv">
+
+        <div class="inlinedisplay, lab_image" ;>
+
+            <img src="/Applications/HTML_GL_Course/Assignment-6th Feb/images/lab-test.jpg" alt="Lab Test Image">
+
+        </div>
+
+
+
+        <section class="inlinedisplay">
+
+
+            <form action="/Applications/HTML_GL_Course/Assignment-6th Feb/01-Pharmacy-page.html">
+                <div class="lineDiv">
+                    <h2> 1. Your Contact Details</h2>
+                    <span id="name">
+                        <input type="name" class="textfields" id="fullName" placeholder="Full Name">
+                    </span>
+
+                    <span id="name">
+                        <input type="text" class="textfields" id="patientid" placeholder="Patient ID if exists">
+
+                    </span>
+
+
+
+                </div>
+
+                <div>
+                    <span id="phonenumber">
+                        <input type="tel" class="textfields" id="phonenumber" placeholder="Contact Number"
+                            pattern="[0-9]{10}">
+
+                    </span>
+
+                    <span id="emailID">
+                        <input type="email" class="textfields" id="emailID" placeholder="Email Id">
+
+
+
+                </div>
+
+                <div>
+                    <h2>2. Address</h2>
+
+
+                    <span id="HouseNumber">
+                        <input type="text" class="textfields" id="HouseNumber" placeholder="H No.">
+
+                    </span>
+
+                    <span id="street">
+                        <input type="text" class="textfields" id="street" placeholder="Street">
+
+
+                </div>
+
+                <div>
+                    <span id="area">
+                        <input type="text" class="textfields" id="area" placeholder="Area">
+
+
+                </div>
+
+                <div>
+
+                    <span id="district">
+                        <label for="district">District</label>
+                        <select name="district" id="district">
+                            <option value="Select">Choose</option>
+                            <option value="district1">District 1</option>
+                            <option value="district2">District 2</option>
+                            <option value="district3">District 3</option>
+                        </select>
+
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <h2>3. Choose the Test Type(Select atleast 1 box without fail)</h2>
+
+                        <input type='checkbox' onclick='countCheckboxes();' /> CBC<br />
+                        <input type='checkbox' onclick='countCheckboxes();' /> Complete Urine<br />
+                        <input type='checkbox' onclick='countCheckboxes();' /> Lipid Profile<br />
+                        <input type='checkbox' onclick='countCheckboxes();' />Thyroid Stimulating Harmone(TSH)<br />
+                        <input type='checkbox' onclick='countCheckboxes();' /> Glucose Test<br />
+                    </span>
+                </div>
+                <div>
+                    <span>
+
+                    </span>
+
+                    <div>
+                        <h2> 4. Do you want a hard copy of the report also?</h2>
+                        <input type="radio" name="hardcopyrequired" required> Yes <br />
+                        <input type="radio" name="hardcopyrequired"> No
+
+                    </div>
+                    <br />
+
+                    <div>
+                        <h2> 5. Select your comfortable Data and Time</h2>
+                        <label for="datefortest">Date</label>
+                        <input type="date" id="datefortest">
+                        <br />
+                        <br />
+                        <label for="timefortest">Time</label>
+                        <input type="time" id="timefortest">
+                    </div>
+                    <br />
+                    <div class="parentbutton">
+                        <button class="buttonallignmentreset" type="reset">Reset</button>
+                        <button class="buttonallignmentsubmit" type="submit" onclick="countCheckboxes()">submit</button>
+                    </div>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
